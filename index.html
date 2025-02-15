@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="images/nature4.jpeg" alt="nature" onclick="openLightbox(this)">
+        <img src="images/nature5.jpeg" alt="nature" onclick="openLightbox(this)">
+        <img src="images/nature.jpeg" alt="nature" onclick="openLightbox(this)">
+        <img src="images/nature2.jpeg" alt="nature2" onclick="openLightbox(this)">
+        <img src="images/nature3.jpeg" alt="nature" onclick="openLightbox(this)">
+        <img src="images/bird2.jpeg" alt="bird" onclick="openLightbox(this)">
+        <img src="images/bird3.jpeg" alt="bird" onclick="openLightbox(this)">
+        <img src="images/bird4.jpeg" alt="bird" onclick="openLightbox(this)">
+        <img src="images/bird.jpeg" alt="bird" onclick="openLightbox(this)">
+        <img src="images/bird5.jpg" alt="bird" onclick="openLightbox(this)">
+        <img src="images/uk.jpeg" alt="city" onclick="openLightbox(this)">
+        <img src="images/city3.jpg" alt="city" onclick="openLightbox(this)">
+        <img src="images/city5.jpeg" alt="city" onclick="openLightbox(this)">
+        <img src="images/city4.jpeg" alt="city" onclick="openLightbox(this)">
+        <img src="images/city1.jpg" alt="city" onclick="openLightbox(this)">
+        <img src="images/web.jpeg" alt="web" onclick="openLightbox(this)">
+        <img src="images/car.webp" alt="car" onclick="openLightbox(this)">
+        <img src="images/car3.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/car2.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/car4.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/car.webp" alt="car" onclick="openLightbox(this)">
+        <img src="images/web.jpeg" alt="web" onclick="openLightbox(this)">
+        <img src="images/car4.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/car.webp" alt="car" onclick="openLightbox(this)">
+        <img src="images/car4.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/car3.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/nature2.jpeg" alt="nature2" onclick="openLightbox(this)">
+        <img src="images/nature3.jpeg" alt="nature" onclick="openLightbox(this)">
+        <img src="images/bird2.jpeg" alt="bird" onclick="openLightbox(this)">
+        <img src="images/car3.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/car2.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/web.jpeg" alt="web" onclick="openLightbox(this)">
+        <img src="images/car2.jpeg" alt="car" onclick="openLightbox(this)">
+        <img src="images/bird3.jpeg" alt="bird" onclick="openLightbox(this)">
+        <img src="images/bird4.jpeg" alt="bird" onclick="openLightbox(this)">
+    </div>
+
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Expanded Image">
+    </div>
+
+    <script>
+        function openLightbox(img) {
+            document.getElementById("lightbox-img").src = img.src;
+            document.querySelector(".lightbox").classList.add("show");
+        }
+        function closeLightbox() {
+            document.querySelector(".lightbox").classList.remove("show");
+        }
+    </script>
+</body>
+</html>
